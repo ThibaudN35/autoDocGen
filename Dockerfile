@@ -5,8 +5,8 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Copy the script and config file into the container
-COPY autoDocGen.py .
+COPY autoocgen.py .
 COPY default_configuration.json .
 
 # Set default command (overridden if you pass args to docker run)
-ENTRYPOINT ["python", "autoDocGen.py"]
+ENTRYPOINT ["python", "autodocgen.py"]
